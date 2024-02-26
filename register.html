@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="h11">
+        <h1 style="text-align: center;">
+            CUSTOMER REGISTRATION FORM
+        </h1 >
+    </div>
+   
+    <div class="container">
+        <img src="reg1.jpg" >
+    </div>
+    <form  class="out"  id="form1">
+        <p>enter the  first name:</p>
+        <label for="name"></label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <p>enter the  last name:</p>
+        <label for="name"></label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <p>enter your email:</p>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <p>enter your password:</p>
+        <label for="password"></label>
+        <input type="password" name="password" id="password" maxlength="10" required  placeholder>
+        <br><br>
+        <p>enter your phone no:</p>
+        <label for="phone no"></label>
+        <input type="number" name="phone no" id="phone no" maxlength="9"  required>
+        <br><br>
+        <p>
+            enter yout age:
+        </p>
+        <label for="age"></label>
+        <input type="number" name="age" id="age" required><br>
+
+       <p>
+        enter your dob:
+       </p>
+       <label for="dob"></label>
+       <input type="date" name="dob" id="dob" required> 
+       <br><br>
+       <p>your gender</p>
+       <select name="gender" id="gender" required>
+        <option value="male">male</option>
+        <option value="female">female</option>
+       </select>
+       <br><br>
+       <p>Choose your district:</p>
+        <select name="district" id="district" required>
+            <option value="">Select District</option>
+            <option value="district1">District 1</option>
+            <option value="district2">District 2</option>
+            <option value="district3">District 3</option>
+        </select>
+        <br><br>
+        <p>Choose your state:</p>
+        <select name="state" id="state" required>
+            <option value="">Select District</option>
+            <option value="state1">District 1</option>
+            <option value="state2">District 2</option>
+            <option value="state3">District 3</option>
+        </select>
+        <br><br>
+        <p>Choose your country:</p>
+        <select name="country" id="country" required>
+            <option value="">Select District</option>
+            <option value="country1">District 1</option>
+            <option value="country2">District 2</option>
+            <option value="country3">District 3</option>
+        </select>
+        <br><br>
+       <p>enter your feedback</p>
+       <label for="feedback"></label>
+       <textarea name="feedback" id="feedback" cols="30" rows="10" required></textarea>
+       <p>submit</p>
+       <button type="button " id="button"  >click it</button>
+       <script>
+         document.getElementById('button').addEventListener('click',function()
+         {
+            var form=document.getElementById('form1');
+            var isvalid=form.checkValidity();
+            if(isvalid)
+            {
+                alert('registered succesful');
+            }
+            else
+            {
+                alert('fill the required items');
+            }
+         })
+       </script>
+
+
+
+
+    </form>
+    
+    
+
+</body>
+</html>
